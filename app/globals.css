@@ -10,8 +10,10 @@
   --color-secondary: #E9C46A;
   --color-secondary-foreground: #264653;
 
-  --color-muted: #F3F4F6;
-  --color-muted-foreground: #6B7280;
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
 
   --font-sans: var(--font-outfit);
 }
@@ -19,12 +21,18 @@
 :root {
   --background: #ffffff;
   --foreground: #264653;
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+  --border: #e5e7eb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --border: #404040;
   }
 }
 

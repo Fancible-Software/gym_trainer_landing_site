@@ -32,7 +32,7 @@ export default function Hero() {
                             <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2">
                                 Get Started <ArrowRight className="w-5 h-5" />
                             </button>
-                            <button className="bg-white hover:bg-gray-50 text-foreground border border-gray-200 px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2">
+                            <button className="bg-background hover:bg-muted text-foreground border border-border px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2">
                                 <span className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
                                     <Play className="w-3 h-3 fill-secondary-foreground text-secondary-foreground" />
                                 </span>
