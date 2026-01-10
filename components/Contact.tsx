@@ -20,7 +20,7 @@ export default function Contact() {
                         </div>
                         <div>
                             <h4 className="font-bold text-primary mb-1">Email</h4>
-                            <p>contact@fitenergy.com</p>
+                            <p>contact@brijesh.com</p>
                         </div>
                         <div>
                             <h4 className="font-bold text-primary mb-1">Phone</h4>

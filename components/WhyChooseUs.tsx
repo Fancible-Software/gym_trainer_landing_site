@@ -4,9 +4,9 @@ export default function WhyChooseUs() {
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4">Why Should People Choose Us</h2>
+                <h2 className="text-4xl font-bold mb-4">Why Should You Choose Me</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    We have a lot of features that make us the best choice for you.
+                    I have a lot of features that make me the best choice for you.
                 </p>
             </div>
 
@@ -18,8 +18,8 @@ export default function WhyChooseUs() {
 
                         {/* Floating badge */}
                         <div className="absolute top-1/4 -right-4 bg-secondary text-secondary-foreground px-6 py-4 rounded-xl shadow-xl z-20">
-                            <span className="text-xl font-bold block">150+</span>
-                            <span className="text-xs font-medium uppercase tracking-wider">Expert Trainers</span>
+                            <span className="text-xl font-bold block">15+</span>
+                            <span className="text-xs font-medium uppercase tracking-wider">Years Experience</span>
                         </div>
                     </div>
                 </div>
@@ -29,17 +29,17 @@ export default function WhyChooseUs() {
                     {[
                         {
                             title: "Personal Training",
-                            desc: "Our trainers are ready to help you achieve your goals.",
+                            desc: "I am ready to help you achieve your goals.",
                             icon: UserCheck
                         },
                         {
-                            title: "Expert Teams",
-                            desc: "We have a team of experts who are ready to help you.",
+                            title: "Expert Guidance",
+                            desc: "I have years of experience helping clients like you.",
                             icon: CheckCircle2
                         },
                         {
                             title: "Affordable Price",
-                            desc: "We offer affordable prices for everyone.",
+                            desc: "I offer affordable prices for everyone.",
                             icon: ShieldCheck
                         }
                     ].map((item, index) => (

@@ -7,9 +7,9 @@ export default function Footer() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-12">
                     <div className="space-y-4">
-                        <Link href="/" className="text-2xl font-bold text-primary">FitEnergy</Link>
+                        <Link href="/" className="text-2xl font-bold text-primary">Brijesh Fitness</Link>
                         <p className="text-muted-foreground">
-                            Unlock your full potential with our customized fitness programs.
+                            Unlock your full potential with my customized fitness programs.
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors">

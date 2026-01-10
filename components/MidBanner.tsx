@@ -9,7 +9,7 @@ export default function MidBanner() {
                         Find Harmony In Body And Mind
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        Through our exercises, you will find harmony in your body and mind. We focus on mental health as well as physical health.
+                        Through my exercises, you will find harmony in your body and mind. I focus on mental health as well as physical health.
                     </p>
                     <Button variant="primary" size="lg">
                         Personal Training

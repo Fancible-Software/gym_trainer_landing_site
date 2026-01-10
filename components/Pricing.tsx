@@ -26,7 +26,7 @@ export default function Pricing() {
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4">Check Out Our Packages</h2>
+                <h2 className="text-4xl font-bold mb-4">Check Out My Packages</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                     Choose the package that suits your needs.
                 </p>

@@ -10,7 +10,7 @@ export default function Features() {
                         Experience Balance, Strength, And Harmony
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        Our exercises are designed to help you find balance and harmony in your life. We focus on strength and flexibility.
+                        My exercises are designed to help you find balance and harmony in your life. I focus on strength and flexibility.
                     </p>
 
                     <div className="space-y-4">

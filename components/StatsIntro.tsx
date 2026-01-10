@@ -20,16 +20,16 @@ export default function StatsIntro() {
                 {/* Text Side */}
                 <div className="space-y-6">
                     <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-                        Start Your Healthy Life Today With Us
+                        Start Your Healthy Life Today With Me
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        We provide a complete course for those of you who want to be healthy and have a ideal body. Our trainers are very professional.
+                        I provide a complete course for those of you who want to be healthy and have a ideal body. I am very professional.
                     </p>
 
                     <ul className="space-y-4 pt-4">
                         {[
                             "Personalized training programs to fit your goals",
-                            "Expert guidance from certified trainers",
+                            "Expert guidance from a certified trainer",
                             "Progress tracking and nutritional advice"
                         ].map((item, index) => (
                             <li key={index} className="flex items-start gap-3">

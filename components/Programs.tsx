@@ -5,19 +5,19 @@ import { ArrowRight } from "lucide-react";
 const programs = [
     {
         title: "Weight Lifting",
-        description: "Build muscle and increase strength with our specialized weight lifting programs designed for all levels.",
+        description: "Build muscle and increase strength with my specialized weight lifting programs designed for all levels.",
         icon: Dumbbell,
         color: "bg-blue-100 text-blue-600",
     },
     {
         title: "Yoga & Stretching",
-        description: "Improve flexibility and reduce stress with our calming yoga and stretching sessions.",
+        description: "Improve flexibility and reduce stress with my calming yoga and stretching sessions.",
         icon: Activity, // Placeholder, maybe use a better icon if available
         color: "bg-green-100 text-green-600",
     },
     {
         title: "Cardio & Fitness",
-        description: "Boost your endurance and heart health with high-energy cardio workouts.",
+        description: "Boost your endurance and heart health with my high-energy cardio workouts.",
         icon: Heart,
         color: "bg-red-100 text-red-600",
     },
@@ -27,9 +27,9 @@ export default function Programs() {
     return (
         <section id="program" className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
-                <h2 className="text-4xl font-bold mb-4">Explore our Fitness Programs</h2>
+                <h2 className="text-4xl font-bold mb-4">Explore My Fitness Programs</h2>
                 <p className="text-muted-foreground">
-                    Choose a program that fits your goals. We offer a variety of classes to help you stay fit and healthy.
+                    Choose a program that fits your goals. I offer a variety of classes to help you stay fit and healthy.
                 </p>
             </div>
 

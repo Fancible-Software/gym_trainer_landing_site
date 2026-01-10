@@ -4,9 +4,9 @@ export default function Testimonials() {
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4">What Our Customer Says</h2>
+                <h2 className="text-4xl font-bold mb-4">What My Clients Say</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Read what our customers say about us.
+                    Read what my clients say about me.
                 </p>
             </div>
 
@@ -28,7 +28,7 @@ export default function Testimonials() {
                         ))}
                     </div>
                     <p className="text-2xl font-medium italic leading-relaxed">
-                        "This gym is amazing! The trainers are very professional and helpful. I've achieved my fitness goals thanks to them."
+                        "Coach Brijesh is amazing! He is very professional and helpful. I've achieved my fitness goals thanks to his guidance."
                     </p>
                     <div>
                         <h4 className="text-xl font-bold">John Doe</h4>

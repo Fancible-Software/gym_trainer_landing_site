@@ -21,9 +21,8 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md shadow-sm">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
-                    {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
-                        <span className="text-2xl font-bold text-primary">FitEnergy</span>
+                        <span className="text-2xl font-bold text-primary">Brijesh Fitness</span>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -44,7 +43,7 @@ export default function Navbar() {
                     {/* Join Now Button (Desktop) */}
                     <div className="hidden md:block">
                         <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-primary/20">
-                            Join Us Now
+                            Join Me Now
                         </button>
                     </div>
 

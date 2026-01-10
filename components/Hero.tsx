@@ -25,7 +25,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg text-muted-foreground max-w-lg">
-                            Get the body you want with our customized fitness programs. Expert trainers, flexible schedules, and diet plans included.
+                            Get the body you want with my customized fitness programs. Expert guidance, flexible schedules, and diet plans included.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
@@ -52,7 +52,7 @@ export default function Hero() {
                             </div>
                             <div>
                                 <p className="font-bold text-lg">25k+</p>
-                                <p className="text-sm text-muted-foreground">Happy Customers</p>
+                                <p className="text-sm text-muted-foreground">Happy Clients</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function Hero() {
                         <div className="relative z-10 mx-auto w-full max-w-[500px] aspect-square">
                             {/* Main circle image placeholder */}
                             <div className="w-full h-full rounded-full bg-gradient-to-tr from-gray-200 to-gray-100 overflow-hidden border-8 border-white/50 relative">
-                                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">Hero Image</div>
+                                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">Coach Brijesh</div>
                                 {/* Decorative ring */}
                                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground p-4 text-center text-xs font-bold leading-tight">
                                     Start Your Healthy Life
@@ -75,8 +75,8 @@ export default function Hero() {
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">💪</div>
                                 <div>
-                                    <p className="text-xs font-bold">150+</p>
-                                    <p className="text-[10px] text-muted-foreground">Expert Trainers</p>
+                                    <p className="text-xs font-bold">15+</p>
+                                    <p className="text-[10px] text-muted-foreground">Years Experience</p>
                                 </div>
                             </div>
                         </div>
