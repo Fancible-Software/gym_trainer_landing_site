@@ -70,8 +70,8 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* Floating elements */}
-                        <div className="absolute top-1/2 -left-4 lg:-left-12 bg-white p-4 rounded-2xl shadow-xl z-20 max-w-[150px]">
+                        {/* Experience Badge */}
+                        <div className="absolute top-1/2 -left-4 lg:-left-12 bg-background border border-border p-4 rounded-2xl shadow-xl z-20 max-w-[150px]">
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">💪</div>
                                 <div>
