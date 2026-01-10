@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function StatsIntro() {
     return (
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Image Side */}
                 <div className="relative">
