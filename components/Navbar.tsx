@@ -28,7 +28,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <div className="ml-10 flex items-baseline space-x-8">
                             {navItems.map((item) => (
                                 <Link
@@ -43,7 +43,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Join Now Button (Desktop) & Theme Toggle */}
-                    <div className="hidden md:flex items-center gap-4">
+                    <div className="hidden lg:flex items-center gap-4">
                         <button
                             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                             className="p-2 rounded-full hover:bg-muted transition-colors"
@@ -57,8 +57,16 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    {/* Mobile section: Theme Toggle + Menu Button */}
+                    <div className="lg:hidden flex items-center gap-2">
+                        <button
+                            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                            className="p-2 rounded-full hover:bg-muted transition-colors"
+                        >
+                            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                            <span className="sr-only">Toggle theme</span>
+                        </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary focus:outline-none"
@@ -71,7 +79,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden bg-background border-b border-border/40">
+                <div className="lg:hidden bg-background border-b border-border/40">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navItems.map((item) => (
                             <Link
