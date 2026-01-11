@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Heart } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -45,8 +45,8 @@ export default function Footer() {
 
                 </div>
 
-                <div className="mt-16 pt-8 text-center text-muted-foreground text-sm">
-                    © {new Date().getFullYear()} FitEnergy. All rights reserved.
+                <div className="mt-16 pt-8 text-center text-muted-foreground text-sm flex items-center justify-center flex-wrap gap-1">
+                    © {new Date().getFullYear()} Brijesh Fitness. All rights reserved. Built with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> by <a href="mailto:info@fanciblesoftware.com" className="text-foreground font-bold text-base ml-1 drop-shadow-md hover:text-primary transition-all">info@fanciblesoftware.com</a>
                 </div>
             </div>
         </footer>

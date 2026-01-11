@@ -1,10 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { ArrowRight, Play } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Play, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Hero() {
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
     return (
         <section id="home" className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
             {/* Background Decor */}
@@ -29,10 +34,20 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2">
+                            <a
+                                href="#contact"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2 cursor-pointer"
+                            >
                                 Get Started <ArrowRight className="w-5 h-5" />
-                            </button>
-                            <button className="bg-background hover:bg-muted text-foreground border border-border px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2">
+                            </a>
+                            <button
+                                onClick={() => setIsVideoModalOpen(true)}
+                                className="bg-background hover:bg-muted text-foreground border border-border px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2 cursor-pointer"
+                            >
                                 <span className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
                                     <Play className="w-3 h-3 fill-secondary-foreground text-secondary-foreground" />
                                 </span>
@@ -43,10 +58,14 @@ export default function Hero() {
                         {/* Social Proof */}
                         <div className="flex items-center gap-4 pt-4">
                             <div className="flex -space-x-3">
-                                {[1, 2, 3].map((i) => (
-                                    <div key={i} className="w-10 h-10 rounded-full border-2 border-background bg-gray-200 overflow-hidden relative">
-                                        {/* Placeholder for avatars */}
-                                        <div className="absolute inset-0 bg-slate-300"></div>
+                                {[
+                                    "https://res.cloudinary.com/dq1li2qrf/image/upload/v1768088777/515421b1-5989-4aa9-85fe-9af873691eb7_kpehyi.jpg",
+                                    "https://res.cloudinary.com/dq1li2qrf/image/upload/v1768088791/b5c69499-1286-4c4e-b9f7-79effcebc622_hekqou.jpg",
+                                    "https://res.cloudinary.com/dq1li2qrf/image/upload/v1768088774/f7772079-bf87-4be5-b505-e677eec17afc_z4pclz.jpg",
+                                    "https://res.cloudinary.com/dq1li2qrf/image/upload/v1768088770/ce897bf7-80ce-463a-8f2a-3ba7d872a94b_fowuii.jpg"
+                                ].map((url, i) => (
+                                    <div key={i} className="w-10 h-10 rounded-full border-2 border-background bg-muted overflow-hidden relative">
+                                        <img src={url} alt={`Client ${i + 1}`} className="w-full h-full object-cover" />
                                     </div>
                                 ))}
                             </div>
@@ -62,7 +81,11 @@ export default function Hero() {
                         <div className="relative z-10 mx-auto w-full max-w-[500px] aspect-square">
                             {/* Main circle image placeholder */}
                             <div className="w-full h-full rounded-full bg-gradient-to-tr from-gray-200 to-gray-100 overflow-hidden border-8 border-white/50 relative">
-                                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">Coach Brijesh</div>
+                                <img
+                                    src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768098087/WhatsApp_Image_2026-01-10_at_5.01.41_PM_zh9cfh.jpg"
+                                    alt="Coach Brijesh"
+                                    className="w-full h-full object-cover"
+                                />
                                 {/* Decorative ring */}
                                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground p-4 text-center text-xs font-bold leading-tight">
                                     Start Your Healthy Life
@@ -83,6 +106,39 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+
+            <AnimatePresence>
+                {isVideoModalOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+                        onClick={() => setIsVideoModalOpen(false)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            className="relative w-full max-w-4xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setIsVideoModalOpen(false)}
+                                className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+                            >
+                                <X className="w-6 h-6" />
+                            </button>
+                            <iframe
+                                src="https://player.cloudinary.com/embed/?cloud_name=dq1li2qrf&public_id=2510394f-34a0-440c-aeba-956908515b92_bibuh4&profile=cld-default"
+                                className="w-full h-full border-0"
+                                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 }

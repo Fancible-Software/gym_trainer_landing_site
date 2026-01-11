@@ -1,4 +1,7 @@
+"use client";
+
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function Features() {
     return (
@@ -29,17 +32,28 @@ export default function Features() {
                         ))}
                     </div>
 
-                    <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg">
+                    <a
+                        href="#contact"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg text-center cursor-pointer"
+                    >
                         See All Features
-                    </button>
+                    </a>
                 </div>
 
                 {/* Image Grid */}
                 <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
-                    {/* Placeholder Layout */}
+                    {/* Image 1 */}
                     <div className="space-y-4 mt-8">
                         <div className="aspect-[4/5] bg-muted rounded-3xl overflow-hidden relative">
-                            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">Image 1</div>
+                            <img
+                                src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768096096/Weight_img_lc6jpf.png"
+                                alt="Gym Trainer Feature 1"
+                                className="w-full h-full object-cover"
+                            />
                             {/* Floating badge */}
                             <div className="absolute bottom-4 left-4 right-4 bg-secondary/90 backdrop-blur p-4 rounded-xl">
                                 <p className="text-xs font-bold text-secondary-foreground">Trusted by</p>
@@ -47,9 +61,14 @@ export default function Features() {
                             </div>
                         </div>
                     </div>
+                    {/* Image 2 */}
                     <div className="space-y-4">
                         <div className="aspect-[4/5] bg-muted rounded-3xl overflow-hidden relative">
-                            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">Image 2</div>
+                            <img
+                                src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768096095/Strength_img1_lgjmwg.png"
+                                alt="Gym Trainer Feature 2"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
                 </div>

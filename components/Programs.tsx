@@ -1,5 +1,6 @@
+"use client";
+
 import { Dumbbell, Activity, Heart } from "lucide-react";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const programs = [
@@ -37,20 +38,29 @@ export default function Programs() {
                 {programs.map((program, index) => (
                     <div key={index} className="bg-background rounded-3xl p-8 border border-border hover:border-secondary hover:shadow-xl transition-all group relative overflow-hidden">
                         {/* Hover Background Accent */}
-                        <div className="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
 
-                        <div className={`w-14 h-14 rounded-2xl ${program.color} flex items-center justify-center mb-6`}>
-                            <program.icon className="w-7 h-7" />
+                        <div className="relative z-10">
+                            <div className={`w-14 h-14 rounded-2xl ${program.color} flex items-center justify-center mb-6`}>
+                                <program.icon className="w-7 h-7" />
+                            </div>
+
+                            <h3 className="text-2xl font-bold mb-3">{program.title}</h3>
+                            <p className="text-muted-foreground mb-6 line-clamp-3">
+                                {program.description}
+                            </p>
+
+                            <a
+                                href="#contact"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                                className="inline-flex items-center text-sm font-semibold text-foreground group-hover:text-primary transition-colors cursor-pointer"
+                            >
+                                Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </a>
                         </div>
-
-                        <h3 className="text-2xl font-bold mb-3">{program.title}</h3>
-                        <p className="text-muted-foreground mb-6 line-clamp-3">
-                            {program.description}
-                        </p>
-
-                        <Link href="#" className="inline-flex items-center text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
-                            Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                        </Link>
                     </div>
                 ))}
             </div>

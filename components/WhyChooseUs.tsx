@@ -1,4 +1,7 @@
+"use client";
+
 import { CheckCircle2, UserCheck, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     return (
@@ -14,7 +17,11 @@ export default function WhyChooseUs() {
                 {/* Image Side */}
                 <div className="relative order-2 lg:order-1">
                     <div className="relative z-10 mx-auto w-full max-w-[500px] aspect-square rounded-full bg-muted overflow-hidden border-8 border-white/50 shadow-2xl">
-                        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">Why Us Image</div>
+                        <img
+                            src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768096096/experience_img_eey4ei.png"
+                            alt="Experience"
+                            className="w-full h-full object-cover"
+                        />
 
                         {/* Floating badge */}
                         <div className="absolute top-1/4 -right-4 bg-secondary text-secondary-foreground px-6 py-4 rounded-xl shadow-xl z-20">
@@ -55,9 +62,16 @@ export default function WhyChooseUs() {
                     ))}
 
                     <div className="pt-4">
-                        <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg">
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg text-center cursor-pointer"
+                        >
                             Start Training
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

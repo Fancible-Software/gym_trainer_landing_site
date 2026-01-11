@@ -1,4 +1,7 @@
+"use client";
+
 import { CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function StatsIntro() {
     return (
@@ -7,7 +10,11 @@ export default function StatsIntro() {
                 {/* Image Side */}
                 <div className="relative">
                     <div className="relative z-10 mx-auto w-full max-w-[500px] aspect-square rounded-full bg-muted overflow-hidden border-8 border-muted/20">
-                        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium">Stats Image</div>
+                        <img
+                            src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768096096/Fetures_Image_fa8zjh.png"
+                            alt="Stats Intro"
+                            className="w-full h-full object-cover"
+                        />
 
                         {/* Floating badge */}
                         <div className="absolute top-1/2 right-0 transform translate-x-1/4 -translate-y-1/2 bg-secondary text-secondary-foreground w-40 h-40 rounded-full flex flex-col items-center justify-center p-4 shadow-xl z-20">
@@ -40,9 +47,16 @@ export default function StatsIntro() {
                     </ul>
 
                     <div className="pt-6">
-                        <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg">
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg text-center cursor-pointer"
+                        >
                             Explore More
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

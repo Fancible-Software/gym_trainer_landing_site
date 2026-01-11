@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
@@ -52,12 +54,19 @@ export default function Pricing() {
                             ))}
                         </ul>
 
-                        <Button
-                            variant={pkg.active ? 'primary' : 'outline'}
-                            className="w-full"
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className={`w-full block text-center py-3 rounded-full font-bold transition-all shadow-lg cursor-pointer ${pkg.active
+                                    ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                                    : 'bg-background text-foreground border border-border hover:bg-muted'
+                                }`}
                         >
                             Choose Package
-                        </Button>
+                        </a>
                     </div>
                 ))}
             </div>

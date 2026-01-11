@@ -10,7 +10,11 @@ export default function Trainers() {
 
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div className="group relative overflow-hidden rounded-3xl aspect-[3/4] bg-muted shadow-2xl">
-                    <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">Brijesh's Photo</div>
+                    <img
+                        src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768088783/b0f15b7c-ca81-4407-a10e-0fc46ac865a3_wwbccs.jpg"
+                        alt="Coach Brijesh"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
 
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
                         <h3 className="text-2xl font-bold">Brijesh</h3>
