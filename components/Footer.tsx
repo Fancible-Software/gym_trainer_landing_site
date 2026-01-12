@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-8">
                     <div className="space-y-4 md:col-span-2">
-                        <Link href="/" className="text-2xl font-bold text-primary">Brijesh Fitness</Link>
+                        <Link href="/" className="text-2xl font-bold text-primary">Urbanfit Toronto</Link>
                         <p className="text-muted-foreground">
                             Unlock your full potential with my customized fitness programs.
                         </p>
@@ -44,16 +44,16 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold mb-6">Contact Us</h4>
                         <ul className="space-y-4 text-muted-foreground">
-                            <li>123 Gym Street, Fitness City</li>
-                            <li>contact@brijesh.com</li>
-                            <li>+123 456 7890</li>
+                            <li>Toronto & GTA</li>
+                            <li>contact@urbanfit.com</li>
+                            <li>+1 (368) 886-7348</li>
                         </ul>
                     </div>
 
                 </div>
 
                 <div className="mt-16 pt-8 text-center text-muted-foreground text-sm flex items-center justify-center flex-wrap gap-1">
-                    © {new Date().getFullYear()} Brijesh Fitness. All rights reserved. Built with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> by <a href="mailto:info@fanciblesoftware.com" className="text-foreground font-bold text-base ml-1 drop-shadow-md hover:text-primary transition-all">info@fanciblesoftware.com</a>
+                    © {new Date().getFullYear()} Urbanfit Toronto. All rights reserved. Built with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> by <a href="mailto:info@fanciblesoftware.com" className="text-foreground font-bold text-base ml-1 drop-shadow-md hover:text-primary transition-all">info@fanciblesoftware.com</a>
                 </div>
             </div>
         </footer>

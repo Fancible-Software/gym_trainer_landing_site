@@ -24,7 +24,7 @@ export default function Navbar() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     <Link href="/" className="flex-shrink-0">
-                        <span className="text-2xl font-bold text-primary">Brijesh Fitness</span>
+                        <span className="text-2xl font-bold text-primary">Urbanfit Toronto</span>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -60,7 +60,7 @@ export default function Navbar() {
                             }}
                             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-primary/20 cursor-pointer"
                         >
-                            Join Me Now
+                            Join Us Now
                         </a>
                     </div>
 
