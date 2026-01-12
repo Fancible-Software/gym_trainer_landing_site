@@ -120,7 +120,7 @@ export default function Hero() {
                             {/* Main circle image placeholder */}
                             <div className="w-full h-full rounded-full bg-gradient-to-tr from-gray-200 to-gray-100 overflow-hidden border-8 border-white/50 relative">
                                 <img
-                                    src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768098087/WhatsApp_Image_2026-01-10_at_5.01.41_PM_zh9cfh.jpg"
+                                    src="https://res.cloudinary.com/dq1li2qrf/image/upload/v1768180582/528617640_780678081182050_3840672124530953631_n_eqcorw.jpg"
                                     alt="Coach Brijesh"
                                     className="w-full h-full object-cover"
                                 />
