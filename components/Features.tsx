@@ -18,10 +18,10 @@ export default function Features() {
 
                     <div className="space-y-4">
                         {[
-                            "Personalized training plans",
-                            "Expert guidance and support",
-                            "Comprehensive nutrition advice",
-                            "Flexible scheduling options"
+                            "Customized workout plans",
+                            "Monthly progress check-ins",
+                            "Nutrition guidance support",
+                            "Flexible scheduling (early mornings, evenings, weekends)"
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-3">
                                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">

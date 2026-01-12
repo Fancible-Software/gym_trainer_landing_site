@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Trainers from "@/components/Trainers";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollFade from "@/components/ScrollFade";
 
 export default function Home() {
   return (
@@ -18,16 +19,36 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className="space-y-24 pb-24">
-        <StatsIntro />
-        <Programs />
-        <Features />
-        <WhyChooseUs />
-        <WorkoutGuide />
-        <Pricing />
-        <MidBanner />
-        <Testimonials />
-        <Trainers />
-        <Contact />
+        <ScrollFade>
+          <StatsIntro />
+        </ScrollFade>
+        <ScrollFade>
+          <Programs />
+        </ScrollFade>
+        <ScrollFade>
+          <Features />
+        </ScrollFade>
+        <ScrollFade>
+          <WhyChooseUs />
+        </ScrollFade>
+        <ScrollFade>
+          <WorkoutGuide />
+        </ScrollFade>
+        <ScrollFade>
+          <Pricing />
+        </ScrollFade>
+        <ScrollFade>
+          <MidBanner />
+        </ScrollFade>
+        <ScrollFade>
+          <Testimonials />
+        </ScrollFade>
+        <ScrollFade>
+          <Trainers />
+        </ScrollFade>
+        <ScrollFade>
+          <Contact />
+        </ScrollFade>
       </div>
       <Footer />
     </main>

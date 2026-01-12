@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                             }}
                             className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg text-center cursor-pointer"
                         >
-                            Start Training
+                            Book Your First Session
                         </a>
                     </div>
                 </div>

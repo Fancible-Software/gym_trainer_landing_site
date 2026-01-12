@@ -31,9 +31,11 @@ export default function Trainers() {
                         <div>
                             <h4 className="font-bold text-lg">Certifications</h4>
                             <ul className="list-disc list-inside text-muted-foreground">
-                                <li>Certified Personal Trainer (NASM)</li>
-                                <li>Nutrition Specialist</li>
-                                <li>Strength & Conditioning Coach</li>
+                                <li>ISSA Elite Personal Trainer Certification</li>
+                                <li>ISSA Bodybuilding Specialist Certification</li>
+                                <li>ISSA Nutrition Coach Certification</li>
+                                <li>ISSA Strength & Conditioning Foundations</li>
+                                <li>CPR / AED & First Aid Certified</li>
                             </ul>
                         </div>
                         <div>

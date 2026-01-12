@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Play, X } from "lucide-react";
+import { ArrowRight, Play, X, MapPin, Home, MonitorPlay, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -29,9 +29,46 @@ export default function Hero() {
                             Unlock Your Full <span className="text-primary">Fitness</span> Potential
                         </h1>
 
+                        {/* Location Badge */}
+                        <div className="flex items-center gap-2 text-lg font-medium text-foreground bg-secondary/10 px-4 py-3 rounded-full w-fit border border-secondary/20">
+                            <MapPin className="w-5 h-5 text-secondary" />
+                            <span>Serving Toronto + GTA (Downtown, North York, etc.)</span>
+                        </div>
+
                         <p className="text-lg text-muted-foreground max-w-lg">
                             Get the body you want with my customized fitness programs. Expert guidance, flexible schedules, and diet plans included.
                         </p>
+
+                        {/* Training Types */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div className="flex items-center gap-3 bg-background border border-border p-4 rounded-xl">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <Dumbbell className="w-5 h-5 text-primary" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-sm">In-Studio / Gym</p>
+                                    <p className="text-xs text-muted-foreground">Sessions</p>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-3 bg-background border border-border p-4 rounded-xl">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <Home className="w-5 h-5 text-primary" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-sm">In-Home</p>
+                                    <p className="text-xs text-muted-foreground">Or Condo Gym</p>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-3 bg-background border border-border p-4 rounded-xl">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <MonitorPlay className="w-5 h-5 text-primary" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-sm">Virtual / Online</p>
+                                    <p className="text-xs text-muted-foreground">Coaching</p>
+                                </div>
+                            </div>
+                        </div>
 
                         <div className="flex flex-wrap gap-4">
                             <a
@@ -42,17 +79,18 @@ export default function Hero() {
                                 }}
                                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2 cursor-pointer"
                             >
-                                Get Started <ArrowRight className="w-5 h-5" />
+                                Book Your First Session <ArrowRight className="w-5 h-5" />
                             </a>
-                            <button
-                                onClick={() => setIsVideoModalOpen(true)}
+                            <a
+                                href="#contact"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
                                 className="bg-background hover:bg-muted text-foreground border border-border px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2 cursor-pointer"
                             >
-                                <span className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
-                                    <Play className="w-3 h-3 fill-secondary-foreground text-secondary-foreground" />
-                                </span>
-                                Watch Video
-                            </button>
+                                Schedule a Free Consult
+                            </a>
                         </div>
 
                         {/* Social Proof */}
