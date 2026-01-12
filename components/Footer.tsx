@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Linkedin, Heart } from "lucide-react";
+import { Facebook, Instagram, Heart } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -12,14 +12,21 @@ export default function Footer() {
                             Unlock your full potential with my customized fitness programs.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors">
+                            <a
+                                href="https://www.facebook.com/share/1CDY7hCTz2/?mibextid=wwXIfr"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors"
+                            >
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors">
+                            <a
+                                href="https://www.instagram.com/brijeshmaitrak?igsh=MThib2ttN3QzZWs0Zw%3D%3D&utm_source=qr"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors"
+                            >
                                 <Instagram className="w-5 h-5" />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground hover:bg-secondary/90 transition-colors">
-                                <Twitter className="w-5 h-5" />
                             </a>
                         </div>
                     </div>

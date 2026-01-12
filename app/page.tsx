@@ -4,6 +4,7 @@ import StatsIntro from "@/components/StatsIntro";
 import Programs from "@/components/Programs";
 import Features from "@/components/Features";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import ServiceArea from "@/components/ServiceArea";
 import WorkoutGuide from "@/components/WorkoutGuide";
 import Pricing from "@/components/Pricing";
 import MidBanner from "@/components/MidBanner";
@@ -30,6 +31,9 @@ export default function Home() {
         </ScrollFade>
         <ScrollFade>
           <WhyChooseUs />
+        </ScrollFade>
+        <ScrollFade>
+          <ServiceArea />
         </ScrollFade>
         <ScrollFade>
           <WorkoutGuide />
